@@ -1,5 +1,7 @@
 const jwt = require("jsonwebtoken")
 const User = require("../models/User")
+dotenv.config();
+
 
 exports.auth = async (req,res, next) =>{
     //fetching token from multiple location
@@ -11,7 +13,7 @@ exports.auth = async (req,res, next) =>{
     }
 
     try {
-        const decode =await jwt.verify(token ,"shhhh");
+        const decode =await jwt.verify(token ,process.env.JWT_SECRET);
         console.log(decode);
         req.user = decode;
     } catch (error) {

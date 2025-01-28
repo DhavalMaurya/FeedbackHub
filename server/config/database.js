@@ -1,7 +1,8 @@
 const mongoose = require("mongoose")
+dotenv.config();
 
 exports.connectDb = () => {
-    mongoose.connect("mongodb+srv://dhavalmaurya229:dhavalmaurya229@cluster0.fz98t.mongodb.net/feedbackHub").then(() => {
+    mongoose.connect(process.env.MONGO_URI).then(() => {
         console.log("Database Connected....")
     }).catch((error) => {
         console.log("Something went wrong while connecting the database...", error);
