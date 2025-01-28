@@ -38,8 +38,4 @@ FeedbackHub is a web-based application designed to streamline client feedback co
 - **Node.js** installed on your system.
 - **MongoDB** (local or Atlas) instance running.
 
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/FeedbackHub.git
-   cd FeedbackHub
+
