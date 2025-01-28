@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Environment variables
+.env
+
+# Build and production directories
+build/
+dist/
+
+# Dependency directories
+.DS_Store
+.idea/
+.vscode/
+
+# Coverage reports
+coverage/
+
+# Lock files
+*.lock
+
+# Miscellaneous
+Thumbs.db  # Windows system file
